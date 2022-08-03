@@ -1,3 +1,4 @@
+#include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
@@ -22,13 +23,13 @@ int main(void)
 
     if (!gladLoadGL())
     {
-      std::cout << "Can't load GLAD!" std::cout << std::endl; 
+      std::cout << "Can't load GLAD!"  << std::endl; 
       return -1;
     }
 
-    std::std::cout << "OpenGL" << GLVersion major << "." <<GLVerson.minor << std::endl;
+    std::cout << "OpenGL" << GLVersion.major << "." <<GLVersion.minor << std::endl;
    
-   glClearCollor(0, 1, 0, 1);
+   glClearColor(0, 1, 0, 1);
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
